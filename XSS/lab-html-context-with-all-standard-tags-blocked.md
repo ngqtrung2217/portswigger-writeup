@@ -1,5 +1,5 @@
-# Lab: {Name}
-- Category: Reflected XSS into HTML context with all tags blocked except custom ones
+# Lab: Reflected XSS into HTML context with all tags blocked except custom ones
+- Category: XSS
 - Độ khó: Practitioner
 - Link lab: https://portswigger.net/web-security/cross-site-scripting/contexts/lab-html-context-with-all-standard-tags-blocked
 
