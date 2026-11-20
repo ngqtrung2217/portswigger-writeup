@@ -1,8 +1,7 @@
 # Lab: {Name}
-- Category: {Category}
-- Độ khó: {Độ khó}
-- Link lab: {Link}
-- Ngày làm: {Date}
+- Category: Reflected XSS with some SVG markup allowed
+- Độ khó: Practitioner
+- Link lab: https://portswigger.net/web-security/cross-site-scripting/contexts/lab-some-svg-markup-allowed
 
 ## Summary
 
