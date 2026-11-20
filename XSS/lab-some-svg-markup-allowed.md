@@ -1,5 +1,5 @@
-# Lab: {Name}
-- Category: Reflected XSS with some SVG markup allowed
+# Lab: Reflected XSS with some SVG markup allowed
+- Category: XSS
 - Độ khó: Practitioner
 - Link lab: https://portswigger.net/web-security/cross-site-scripting/contexts/lab-some-svg-markup-allowed
 
