@@ -11,20 +11,20 @@ Lab này block mọi HTML tags ngoại trừ custom. Để solve thì cần 1 pa
 
 Dự đoán xss được reflected và fire sau khi search.
 
-![](../0_images/XSS/lab-onclick-event-angle-brackets-double-quotes-html-encoded-single-quotes-backslash-escaped/Screenshot%20from%202026-11-20%2010-29-00.png)
+![](../0_images/XSS/lab-html-context-with-all-standard-tags-blocked/Screenshot%20from%202026-11-20%2010-29-00.png)
 
 Thử `<script>alert(1)</script>` và bị chặn bởi WAF?
 
-![](../0_images/XSS/lab-onclick-event-angle-brackets-double-quotes-html-encoded-single-quotes-backslash-escaped/Screenshot%20from%202026-11-20%2010-31-02.png)
+![](../0_images/XSS/lab-html-context-with-all-standard-tags-blocked/Screenshot%20from%202026-11-20%2010-31-02.png)
 
 Cho phép custom tag (nhìn vào tên bài) thì thử payload `<xss>hehe</xss>` và đc allow
 
-![](../0_images/XSS/lab-onclick-event-angle-brackets-double-quotes-html-encoded-single-quotes-backslash-escaped/Screenshot%20from%202026-11-20%2010-32-01.png)
+![](../0_images/XSS/lab-html-context-with-all-standard-tags-blocked/Screenshot%20from%202026-11-20%2010-32-01.png)
 
 Thử thêm `onfocus` vào để tự động render.
 Kết quả là nó escape ra được
 
-![](../0_images/XSS/lab-onclick-event-angle-brackets-double-quotes-html-encoded-single-quotes-backslash-escaped/Screenshot%20from%202026-11-20%2010-35-07.png)
+![](../0_images/XSS/lab-html-context-with-all-standard-tags-blocked/Screenshot%20from%202026-11-20%2010-35-07.png)
 
 ## Root cause
 
@@ -39,8 +39,8 @@ location = 'https://0a26009d04f9877f80a22635005c0010.web-security-academy.net/?s
 
 Bấm store -> Deliver to victim
 
-![](../0_images/XSS/lab-onclick-event-angle-brackets-double-quotes-html-encoded-single-quotes-backslash-escaped/Screenshot%20from%202026-11-20%2010-41-54.png)
-![](../0_images/XSS/lab-onclick-event-angle-brackets-double-quotes-html-encoded-single-quotes-backslash-escaped/Screenshot%20from%202026-11-20%2010-41-58.png)
+![](../0_images/XSS/lab-html-context-with-all-standard-tags-blocked/Screenshot%20from%202026-11-20%2010-41-54.png)
+![](../0_images/XSS/lab-html-context-with-all-standard-tags-blocked/Screenshot%20from%202026-11-20%2010-41-58.png)
 
 ## Impact
 
